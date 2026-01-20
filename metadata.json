@@ -1,0 +1,5 @@
+{
+  "name": "Eldritch Survivor: Void Rebirth",
+  "description": "A high-performance Gothic Vampire Survivors clone featuring spatial hashing, procedural asset generation, and object pooling for buttery-smooth 60FPS gameplay.",
+  "requestFramePermissions": []
+}

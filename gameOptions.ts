@@ -1,0 +1,65 @@
+
+export const GAME_OPTIONS = {
+  PLAYER_BASE_HP: 150, 
+  PLAYER_SPEED: 0.3500, 
+  PLAYER_RADIUS: 12,
+  
+  MAX_ACTIVE_POWERS: 6,
+  MAX_ACCESSORIES: 4,
+  STARTING_REROLLS: 5, 
+  
+  // XP Balancing
+  XP_CURVE_BASE: 30,
+  XP_CURVE_EXPONENT: 1.25,
+  XP_CURVE_LINEAR: 15,
+  
+  GEM_XP_VALUE: 12,
+  GEM_KING_MULTIPLIER: 25, 
+  
+  // Health Regeneration
+  PLAYER_BASE_REGEN: 2.0, 
+  PLAYER_REGEN_PER_LEVEL: 0.4, 
+  
+  // Dynamic Spawn System
+  SPAWN_RATE_START: 1000, 
+  SPAWN_RATE_END: 100,    
+  SPAWN_RAMP_DURATION: 600, 
+  
+  MAX_ENEMIES_START: 40,
+  MAX_ENEMIES_END: 1200, 
+  
+  ENEMY_SPAWN_DIST: 750,
+  SAFE_SPAWN_RADIUS: 350, 
+  GRACE_PERIOD: 5, 
+  
+  KING_SPAWN_TIME: 60, 
+  KING_HP_MULTIPLIER: 12, 
+  
+  // Chests
+  CHEST_SPAWN_CHANCE: 0.10,
+  CHEST_LIMIT: 5,
+  
+  GRID_SIZE: 128, // Larger tiles for better detail
+  WORLD_BOUNDS: 4000,
+  
+  // AI Settings
+  AI_SEPARATION_FORCE: 0.9, 
+  AI_SEPARATION_RADIUS: 20,
+  
+  // Difficulty Scaling
+  STARTING_DIFFICULTY_MULT: 0.8,
+  DIFFICULTY_RAMP_MINUTES: 5,    
+  LATE_GAME_SCALING: 0.05, 
+  
+  // 🎨 VISUAL OVERHAUL
+  COLORS: {
+    BACKGROUND: '#050508', // Deep Void
+    GRID: '#1a1a24',       // Faint Blue-Grey
+    PLAYER: '#00ffff',
+    GEM: '#00bfff',
+    GEM_SUPER: '#ffd700', 
+    XP_BAR: '#3b82f6',
+    HP_BAR: '#ef4444',
+    CHEST: '#8B4513'
+  }
+};

@@ -1,0 +1,14 @@
+
+export const REVENANT_STATS = {
+  HP: 500000, 
+  SPEED: 0.08, 
+  REGEN_THRESHOLD: 0.7,
+  REGEN_AMOUNT: 800 // High regen requires high sustained DPS
+};
+
+export const ABILITIES = {
+  NECRO_HORDE: 'NECRO_HORDE',
+  PLAGUE_BREATH: 'PLAGUE_BREATH',
+  EARTHSHATTER: 'EARTHSHATTER',
+  RESURRECTION: 'RESURRECTION'
+};
