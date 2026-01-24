@@ -12,7 +12,7 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
   const animationRef = useRef<number>(0);
   
   // Interaction State
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const mousePosRef = useRef({ x: 0, y: 0 });
   const [fadingOut, setFadingOut] = useState(false);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
     // Animation Loop
     const loop = (time: number) => {
       if (rendererRef.current) {
-        rendererRef.current.draw(time, mousePos.x, mousePos.y);
+        rendererRef.current.draw(time, mousePosRef.current.x, mousePosRef.current.y);
       }
       animationRef.current = requestAnimationFrame(loop);
     };
@@ -44,10 +44,10 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart }) => {
       window.removeEventListener('resize', handleResize);
       cancelAnimationFrame(animationRef.current);
     };
-  }, [mousePos]);
+  }, []);
 
   const handleMouseMove = (e: React.MouseEvent) => {
-    setMousePos({ x: e.clientX, y: e.clientY });
+    mousePosRef.current = { x: e.clientX, y: e.clientY };
   };
 
   const handleStartClick = () => {
